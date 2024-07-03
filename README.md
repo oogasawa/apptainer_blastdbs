@@ -39,7 +39,7 @@ The following command downloads the database in parallel with four instances.
 apptainer exec --cpus 4  apptainer_blastdbs.sif ncbi-blastdbs nt
 ```
 
-Caution: If cgroups v2 is not enabled on your OS, the `--cpus` option will not work. You will get the following error.
+Caution: If cgroups v2 is not enabled on your Linux kernel, the `--cpus` option will not work. You will get the following error.
 
 ``` sh
 INFO:    underlay of /etc/localtime required more than 50 (92) bind mounts
